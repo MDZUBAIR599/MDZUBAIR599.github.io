@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 // import {Abdullah_Image.png} "../Assests/Images/Abdullah_Image.png"
-import Profile from "../../Assests/Profile/My.png"
+import Profile from "../../Assests/Profile/mypic.png"
 export default function Hero() {
 
     return (
@@ -144,9 +144,9 @@ box-shadow:
 }
 `
 const Right = styled.div`
-width: 25rem;
-padding-top: 3rem;
-padding-left: 17rem;
+width: 20rem;
+padding-top: 4rem;
+padding-left: 7rem;
 @media (max-width: 768px) {
     width: 100%;
     padding: 0 3rem;
