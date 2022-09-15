@@ -1,105 +1,119 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useState, useRef, useContext } from 'react';
 import { Link } from 'react-scroll'
-import { animateScroll as scroll } from 'react-scroll'
+import styled from 'styled-components';
+import { ThemeContext } from '../ThemeContext/ThemeContext';
 
-export default function Navbar() {
+import styles from './Navbar.module.css';
 
-    return (
-        <Nav>
-            <NavCont>
-                <Logo onClick={()=> scroll.scrollToTop()}>MDZ</Logo>
-                <Menu>
-                    <Link to='projects' smooth={true} duration={1500}><Projects> Projects </Projects></Link>
-                    <Link to='footer' smooth={true} duration={1500}><Contact> Contact </Contact></Link>
-                    <Resume> <Link to=" " target="_blank" rel="noopener noreferrer">Resume</Link></Resume>
-                </Menu>
-            </NavCont>
-        </Nav>
-    )
-}
+const barStyle = {
+	bar1: {
+		position: 'absolute',
+		width: '15px',
+		transform: 'rotate(45deg)',
+	},
+	bar2: {
+		position: 'absolute',
+		left: '-2px',
+	},
+	bar3: {
+		position: 'absolute',
+		width: '15px',
+		transform: 'rotate(-45deg)',
+	},
+};
 
-const Nav = styled.div`
-    z-index: 10;
-    position: sticky;
-    top: 0;
-    padding:10px
-    border:1px solid teal;
-    //border-bottom: 1px solid gray;
-    height: 3.5rem;
-    
-    backdrop-filter: saturate(150%) blur(50px);
-    // background:#6b6b6b;
-    @media (max-width: 768px) {
-        height: 3.5rem;
-    }
-`
-const NavCont = styled.div`
-    padding: 0 2rem;
-    color:#0f1108;
-    display: flex;
-    justify-content: space-between;
-    @media (max-width: 768px) {
-        padding: 5px 15px;
-    }
-`
-const Logo = styled.div`
-    font-family: 'Philosopher', sans-serif;
-    font-size:3rem;
-    cursor: pointer;
-    color:#0f1108;
-    @media (max-width: 768px) {
-        font-size:2rem;
-        line-height:2.8rem;
-        }
-    `
-const Menu = styled.div`
-    display: flex;
-    font-size: 1.3rem;
-    line-height: 3.5rem;
-    justify-content: space-between;
-    div{
-        font-size: 1rem;
-        position: relative;
-        width: 5.6rem;
-        padding: 0 1rem;
-        margin: 0 2rem;
-        cursor: pointer;
-        @media (max-width: 768px) {
-        padding: 0;
-        margin: 0%;
-        line-height: 2.8rem;
-        }
-        :hover{
-            background: #e7ffed;
-            transition: 0.4s;
-        }
-    }
-    div:after{
-        content: "";
-        position: absolute;
-        background-color: #80AB82;
-        height: 3px;
-        width: 0;
-        left: 0;
-        bottom: 0px;
-        transition: 0.3s;
-    }
-    div:hover:after{
-        width: 100%;
-    }
-`
-const Projects = styled.div`
-// font-width:40px;
-@media (max-width: 500px) {
-        display: none;
-        }
-`
-const Contact = styled.div`
-`
-const Resume = styled.div`
-    a{
-        text-decoration: none;
-        color:#0f1108;
-    }
+const Navbar = () => {
+	// const [preScrollPos, setPreScrollPos] = useState(
+	// 	window.pageYOffset,
+	// );
+	const navRef = useRef();
+
+	const { newTheme, mode, handleMode, open, handleMenu } =
+		useContext(ThemeContext);
+
+	// window.onscroll = () => {
+	// 	let currentScrollPos = window.pageYOffset;
+	// 	if (preScrollPos > currentScrollPos) {
+	// 		navRef.current.style.top = '0';
+	// 	} else {
+	// 		navRef.current.style.top = '-80px';
+	// 	}
+	// 	setPreScrollPos(currentScrollPos);
+	// };
+
+	return (
+		<nav
+			ref={navRef}
+			className={styles.navContainer}
+			style={{
+				background: `${newTheme.background}`,
+				boxShadow: `3px 3px 10px ${newTheme.line}`,
+			}}
+		>
+			<div className={styles.navbar}>
+				<a href="">
+					<div className={styles.logo}>
+						<img
+							src='https://us.123rf.com/450wm/dragomirescu/dragomirescu1909/dragomirescu190900059/129714051-alphabet-letter-logo-icon-design-z-in-pink-blue-colors-suitable-for-a-technology-company-or-business.jpg?ver=6'
+							alt='Logo'
+						/>
+					</div>
+				</a>
+
+				<div
+					style={{ color: `${newTheme.title}` }}
+					className={styles.links}
+				>
+					<Link to='#home'><Home>Home</Home></Link>
+					<Link to='#about'>About</Link>
+					<Link to="#techstacks">Skills</Link>
+					<Link to='#projects'>Projects</Link>
+
+					<Link to='#contact'>Contact</Link>
+				</div>
+				<button
+					style={{ color: `${newTheme.title}` }}
+					className={styles.modeButton}
+					onClick={handleMode}
+				>
+					{mode === 'light' ? (
+						<i class="fas fa-lightbulb"></i>
+						) : (
+							<i class="far fa-lightbulb"></i>
+					)}
+				</button>
+
+				<div onClick={handleMenu} className={styles.bars}>
+					<div
+						style={
+							open
+								? { background: `${newTheme.title}` }
+								: barStyle.bar1
+						}
+					></div>
+					<div
+						style={
+							open
+								? { background: `${newTheme.title}` }
+								: barStyle.bar2
+						}
+					></div>
+					<div
+						style={
+							open
+								? { background: `${newTheme.title}` }
+								: barStyle.bar3
+						}
+					></div>
+				</div>
+			</div>
+		</nav>
+	);
+};
+
+export default Navbar;
+
+
+const Home=styled.div`
+
 `

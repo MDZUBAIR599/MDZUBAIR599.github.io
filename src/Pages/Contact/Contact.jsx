@@ -1,18 +1,11 @@
-
-
 import React from 'react'
-import styled from 'styled-components'
+
 function Contact() {
   return (
-    <div>
-    
-    <div id='contact'>
-     
-    </div>
+    <div id="contact">
+      
     </div>
   )
 }
 
 export default Contact
-
-

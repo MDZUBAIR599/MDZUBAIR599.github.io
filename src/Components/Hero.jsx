@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 // import {Abdullah_Image.png} "../Assests/Images/Abdullah_Image.png"
-import Profile from "../../Assests/Profile/mypic.png"
+import Profile from "../Assests/Profile/mypic.png"
+
 export default function Hero() {
 
     return (
