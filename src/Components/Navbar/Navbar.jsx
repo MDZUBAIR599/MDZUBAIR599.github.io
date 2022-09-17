@@ -1,7 +1,8 @@
 import React, { useState, useRef, useContext } from 'react';
-import { Link } from 'react-scroll'
+
+import { Link } from "react-scroll";
 import styled from 'styled-components';
-import { ThemeContext } from '../ThemeContext/ThemeContext';
+import { ThemeContext } from '../../ThemeContext/ThemeContext';
 
 import styles from './Navbar.module.css';
 
@@ -51,25 +52,30 @@ const Navbar = () => {
 			}}
 		>
 			<div className={styles.navbar}>
-				<a href="">
+				<Link to="">
 					<div className={styles.logo}>
 						<img
 							src='https://us.123rf.com/450wm/dragomirescu/dragomirescu1909/dragomirescu190900059/129714051-alphabet-letter-logo-icon-design-z-in-pink-blue-colors-suitable-for-a-technology-company-or-business.jpg?ver=6'
 							alt='Logo'
 						/>
 					</div>
-				</a>
+				</Link>
 
 				<div
 					style={{ color: `${newTheme.title}` }}
 					className={styles.links}
 				>
-					<Link to='#home'><Home>Home</Home></Link>
-					<Link to='#about'>About</Link>
-					<Link to="#techstacks">Skills</Link>
-					<Link to='#projects'>Projects</Link>
+					<Link
+					to='home' activeClass="active" spy={true} smooth={true} offset={-100} duration={500} >Home</Link>
+					<Link 
+					to='about'
+					activeClass="active" spy={true} smooth={true} offset={-100} duration={500} >About</Link>
+					<Link spy={true} smooth={true} offset={-100} duration={500} to="techstacks">Skills</Link>
+					<Link 
+					to='projects'
+					activeClass="active"spy={true} smooth={true} offset={-100} duration={500} >Projects</Link>
 
-					<Link to='#contact'>Contact</Link>
+					<Link to='contact' spy={true} smooth={true} offset={-100} duration={500} >Contact</Link>
 				</div>
 				<button
 					style={{ color: `${newTheme.title}` }}

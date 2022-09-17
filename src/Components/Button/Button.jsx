@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { ThemeContext } from "../ThemeContext/ThemeContext"
+import { ThemeContext } from "../../ThemeContext/ThemeContext"
 
 import styles from "./Button.module.css"
 export const Button=({text,handleButton})=>{

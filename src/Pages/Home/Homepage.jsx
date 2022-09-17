@@ -15,13 +15,14 @@ import About from '../About/About';
 import Contact from '../Contact/Contact';
 
 
-import { Link } from 'react-router-dom';
-import SideIcons from '../SideIcons/SideIcons';
-import { ThemeContext } from '../../Components/ThemeContext/ThemeContext';
-import Card from '../../Components/Card/Card';
-import  { projects } from '../../Utils/Projects';
-import { Button } from '../../Components/Button/Button';
 
+import SideIcons from '../SideIcons/SideIcons';
+import { ThemeContext } from '../../ThemeContext/ThemeContext';
+import Card from '../../Components/Card/Card';
+import  { projects } from '../Projects/Projects';
+import { Button } from '../../Components/Button/Button';
+import resume from "../../Assests/Resume/Md_Zubair_Resume.pdf"
+import { Link } from 'react-scroll';
 
 const Home = ({ scrollRef }) => {
 	const [width]=WindowSize()
@@ -43,7 +44,7 @@ const Home = ({ scrollRef }) => {
   };
 
 	return (
-		<div ref={scrollRef} id="home">
+		<div  ref={scrollRef} >
 		 	<SideIcons />
 			<div
 				id='top'
@@ -87,22 +88,22 @@ const Home = ({ scrollRef }) => {
 						
 					</h1>
 					<div className={styles.btn}>
-						<a href='https://drive.google.com/file/d/1rCU_9SRskkaSupC5XBjXEuDds9DY_nTh/view'  download> 
+						<a href={resume}  download> 
             
 
-                        {/*  add resume here*/}
+                        {/* resume section*/}
 							<Button
 								text={
 									<span className={styles.resumeBtn}>
-										<span>See my Resume 😇   </span>{' '}
-										<i className='fas fa-file-download'></i>
+										<span>Download my Resume 😇   </span>{' '}
+										
 										<i class="fas fa-download"></i>
 									</span>
 								}
 								handleButton={handleButton}
 							/>
 							{width<=650?<div>
-								<Link href="#contact"><h2>Contact me</h2></Link>
+								<Link to="contact"><h2>Contact me</h2></Link>
 							</div>:""
 							}
 
@@ -124,7 +125,7 @@ const Home = ({ scrollRef }) => {
 				<About />
 			</div>
 
-			<div id='techstacks' className={styles.techStacks}>
+			<div  className={styles.techStacks}>
 				<TechStacks />
 			</div>
 
@@ -161,14 +162,6 @@ const Home = ({ scrollRef }) => {
 					))}
 				</div>
 				
-        {/* <Button
-					text={
-						projects.length !== projectArray.length
-							? 'Show More'
-							: 'Show Less'
-					}
-					handleButton={handleShowMoreBtn}
-				/> */}
 			</div>
 
 			<div

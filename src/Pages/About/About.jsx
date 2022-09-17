@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeContext } from "../../Components/ThemeContext/ThemeContext";
+import { ThemeContext } from "../../ThemeContext/ThemeContext";
 import Profile from "../../Assests/Profile/mypic.png"
 import WindowSize from "../../Utils/WindowSize";
 import styles from "./About.module.css";
@@ -32,12 +32,13 @@ const About = () => {
         <div className={styles.borderBottom} />
         <p style={{ color: `${newTheme.para}` }} className={styles.aboutMe}>
           I am a Full stack web developer. I have made some projects using HTML,
-          CSS, Javascript, React, Node.js, Mongodb and Express.
+          CSS, Javascript, React, Redux still learning...
           <br />
           <br />I am passionate about solving real-world problems in the field
           of web development and software engineering. Eager to be a part of a
           team which gives me ability to learn and grow . My hobbies are
-          Watching movies,listening to podcasts,listening to music
+          Watching movies,
+          Travelling, listening music
         </p>
       </div>
     </div>

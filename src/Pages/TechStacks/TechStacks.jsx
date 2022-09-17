@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ThemeContext } from '../../Components/ThemeContext/ThemeContext';
+import { ThemeContext } from '../../ThemeContext/ThemeContext';
 
 import styles from './TechStacks.module.css';
 
@@ -7,6 +7,7 @@ const TechStacks = () => {
 	const { newTheme } = useContext(ThemeContext);
 	return (
 		<div
+		id="techstacks"
 			data-aos='fade-right'
 			data-aos-offset='200'
 			data-aos-easing='ease-in-sine'

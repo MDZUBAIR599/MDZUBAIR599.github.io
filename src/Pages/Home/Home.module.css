@@ -6,7 +6,7 @@ body {
 	scroll-behavior: smooth;
 	font-family: 'Roboto Mono', monospace;
 }
-body::before {
+/* body::before {
 	content: '';
 	position: fixed;
 	width: 100%;
@@ -25,7 +25,7 @@ body::after {
 	opacity: 0.2;
 	background: linear-gradient(#1b2aff, #11dbff);
 	clip-path: circle(10% at 5% 5%);
-}
+} */
 .intro {
 	max-width: 50vw;
 	text-align: left;
@@ -71,12 +71,11 @@ body::after {
 	background-position-y: 10vh;
 }
 .profileImage {
-	width: 300px;
-	height:300px;
-	border-radius: 45%;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
 	overflow: hidden;
-	margin-left: 70px;
-	margin-right: 100px;
+	margin-left: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -88,7 +87,6 @@ body::after {
 }
 .profileImage img {
 	width: 400px;
-
 }
 
 .techStacks {
@@ -136,14 +134,13 @@ body::after {
 		padding-left: 5vw;
 	}
 	.profileImage {
-		margin-left: 50px;
+		margin-left: 30px;
 	}
 }
 @media screen and (max-width: 900px) {
 	.profileImage {
-		width: 280px;
-		height: 280px;
-		
+		width: 300px;
+		height: 300px;
 	}
 	.profileImage img {
 		width: 300px;
@@ -167,11 +164,6 @@ body::after {
 @media screen and (max-width: 830px) {
 	.profile {
 		background-position: bottom right;
-	}
-	.profileImage {
-		margin-left: 100px;
-	    width: 190px;
-		height: 240px;
 	}
 }
 @media screen and (max-width: 650px) {
@@ -197,14 +189,14 @@ body::after {
 
 	.profileImage {
 		position: absolute;
-		width: 40vw;
-		height: 40vw;
+		width: 50vw;
+		height: 50vw;
 		top: 80px;
 		right: 50%;
 		transform: translateX(50%) !important;
 	}
 	.profileImage img {
-		width: 40vw;
+		width: 50vw;
 	}
 	.name {
 		font-size: 42px;
@@ -220,7 +212,7 @@ body::after {
 		transform: translateX(50%) !important;
 	}
 	.profileImage img {
-		width: 30vw;
+		width: 40vw;
 	}
 	.intro {
 		margin-top: 30vh;

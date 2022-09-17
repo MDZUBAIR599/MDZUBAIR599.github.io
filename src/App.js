@@ -1,21 +1,42 @@
 
-import { useContext, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './App.css';
 
 import Navbar from './Components/Navbar/Navbar';
-import { ThemeContext } from './Components/ThemeContext/ThemeContext';
+
 import Home from './Pages/Home/Homepage';
+import { ThemeContext } from './ThemeContext/ThemeContext';
 
 function App() {
-  const [state, setState] = useState(false);
+	const [state, setState] = useState(false);
 	const { newTheme, open, handleMenu } =
 		useContext(ThemeContext);
-  const scrollRef = useRef();
-  return (
-    <>
-    
+	const scrollRef = useRef();
+
+	useEffect(() => {
+		setTimeout(() => {
+			setState(true);
+		}, 2000);
+	}, []);
+
+
+	return (
+		<>
+			{!state ? (
+				<div
+					style={{
+						background: `${newTheme.background}`,
+					}}
+					className='logoStart'
+				>
+					<img
+						src='https://us.123rf.com/450wm/dragomirescu/dragomirescu1909/dragomirescu190900059/129714051-alphabet-letter-logo-icon-design-z-in-pink-blue-colors-suitable-for-a-technology-company-or-business.jpg?ver=6'
+						alt='logo'
+					/>
+				</div>
+			) : (
 				<div className='components'>
            
 					<div
@@ -26,26 +47,26 @@ function App() {
 						}}
 						className='links'
 					>
-						<Link onClick={handleMenu}to='#home'>
+						<a onClick={handleMenu} href='home'>
 							Home
-						</Link>
-						<Link onClick={handleMenu}to='#Linkbout'>
-							Linkbout
-						</Link>
-						<Link onClick={handleMenu}to='#projects'>
+						</a>
+						<a onClick={handleMenu} href='about'>
+							About
+						</a>
+						<a onClick={handleMenu} href='projects'>
 							Projects
-						</Link>
-						<Link onClick={handleMenu}to='#techstLinkcks'>
+						</a>
+						<a onClick={handleMenu} href='techstacks'>
 							Skills
-						</Link>
-						<Link onClick={handleMenu}to='#contLinkct'>
-							ContLinkct
-						</Link>
+						</a>
+						<a onClick={handleMenu} href='contact'>
+							Contact
+						</a>
 					</div>
 					<Navbar />
 					<Home scrollRef={scrollRef} />
 				</div>
-			
+			)}
 		</>
   );
 }

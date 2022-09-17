@@ -1,7 +1,7 @@
 import React from 'react';
 
 import WindowSize from '../../Utils/WindowSize';
-import { ThemeContext } from '../ThemeContext/ThemeContext';
+import { ThemeContext } from '../../ThemeContext/ThemeContext';
 import styles from './Card.module.css';
 
 const Card = (props) => {

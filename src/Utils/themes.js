@@ -1,7 +1,6 @@
 export const theme = {
 	dark: {
 		background: 'black',
-		
 		title: 'white',
 		para: '#8993b1',
 		heading: '#CCD6F6',
@@ -16,8 +15,7 @@ export const theme = {
 	},
 	light: {
 		buttonColor:"white",
-		
-		background: '#eae7dc',
+		background: '#FFFFFF',
 		title: 'black',
 		para: '#233742',
 		heading: '#233742',
