@@ -52,24 +52,24 @@ const Navbar = () => {
 			}}
 		>
 			<div className={styles.navbar}>
-				<Link to="">
+				<a href="https://mdzubair599.github.io/">
 					<div className={styles.logo}>
 						<img
 							src='https://us.123rf.com/450wm/dragomirescu/dragomirescu1909/dragomirescu190900059/129714051-alphabet-letter-logo-icon-design-z-in-pink-blue-colors-suitable-for-a-technology-company-or-business.jpg?ver=6'
 							alt='Logo'
 						/>
 					</div>
-				</Link>
+				</a>
 
 				<div
 					style={{ color: `${newTheme.title}` }}
 					className={styles.links}
 				>
 					<Link
-					to='home' activeClass="active" spy={true} smooth={true} offset={-100} duration={500} >Home</Link>
+					to='home' activeClass="active" spy={true} smooth={true} offset={-200} duration={500} >Home</Link>
 					<Link 
 					to='about'
-					activeClass="active" spy={true} smooth={true} offset={-100} duration={500} >About</Link>
+					activeClass="active" spy={true} smooth={true} offset={-400} duration={500} >About</Link>
 					<Link spy={true} smooth={true} offset={-100} duration={500} to="techstacks">Skills</Link>
 					<Link 
 					to='projects'

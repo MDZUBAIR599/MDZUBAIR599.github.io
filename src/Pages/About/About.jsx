@@ -10,7 +10,7 @@ const About = () => {
   const img =
     width < 650
       // ?
-      ?"https://lh3.googleusercontent.com/9-MISVFRbSTjClOwG6ZilARg8j-YCu9pHJq1lJ6B-lDZszl6jkYW9etTLq_UhaURmyE7nb3la72se2Ql2w=s292-rw"
+      ?"https://user-images.githubusercontent.com/101566430/191503559-6e5931c1-179a-43a9-8253-9affbe2082a2.jpg"
       : "https://miro.medium.com/max/1360/1*IRGHmiGsa16stedQvIaZfw.gif";
   return (
     <div
@@ -33,6 +33,15 @@ const About = () => {
         <p style={{ color: `${newTheme.para}` }} className={styles.aboutMe}>
           I am a Full stack web developer. I have made some projects using HTML,
           CSS, Javascript, React, Redux still learning...
+    
+          <br />
+          <br />
+
+          i Have done 1200 hours + coding.
+          <br />
+          <br />
+          Solved 200+ DSA (data structures and algorithms)
+
           <br />
           <br />I am passionate about solving real-world problems in the field
           of web development and software engineering. Eager to be a part of a

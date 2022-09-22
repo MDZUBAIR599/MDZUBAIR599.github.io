@@ -1,8 +1,16 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../ThemeContext/ThemeContext';
+import { Github } from './Github';
 
 import styles from './TechStacks.module.css';
-
+import { SiChakraui } from "react-icons/si";
+import { TbBrandVercel } from "react-icons/tb";
+import {
+	
+	SiNetlify,
+	
+	SiJest,
+  } from "react-icons/si";
 const TechStacks = () => {
 	const { newTheme } = useContext(ThemeContext);
 	return (
@@ -12,6 +20,7 @@ const TechStacks = () => {
 			data-aos-offset='200'
 			data-aos-easing='ease-in-sine'
 			data-aos-duration='800'
+
 		>
 			<h1
 				style={{ color: `${newTheme.title}` }}
@@ -102,16 +111,49 @@ const TechStacks = () => {
 					}}
 					className={styles.logoWrapper}
 				>
-					<i class=""></i>
+					 <SiChakraui />
 					<span>Chakra Ui</span>
 				</div>
+				<div
+					style={{
+						color: `${newTheme.buttonColor}`,
+						background: `${newTheme.linkHover}`,
+					}}
+					className={styles.logoWrapper}
+				>
+					  <SiNetlify />
+					<span>Netlify</span>
+				</div>
+				<div
+					style={{
+						color: `${newTheme.buttonColor}`,
+						background: `${newTheme.linkHover}`,
+					}}
+					className={styles.logoWrapper}
+				>
+					<TbBrandVercel />
+					<span>Vercel</span>
+				</div>
+				<div
+					style={{
+						color: `${newTheme.buttonColor}`,
+						background: `${newTheme.linkHover}`,
+					}}
+					className={styles.logoWrapper}
+				>
+					 <SiJest/>
+					<span>Jest</span>
+				</div>
+				
 				</div>
 				<h1
 				style={{ color: `${newTheme.title}` }}
 				className={styles.heading}
 			    >
-				Back End
+				
+				<Github/>
 			   </h1>
+			  
 			
 
 		</div>
@@ -119,3 +161,4 @@ const TechStacks = () => {
 };
 
 export default TechStacks;
+

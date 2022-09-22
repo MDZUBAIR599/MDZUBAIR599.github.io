@@ -47,19 +47,19 @@ function App() {
 						}}
 						className='links'
 					>
-						<a onClick={handleMenu} href='home'>
+						<a onClick={handleMenu} href='#home'>
 							Home
 						</a>
-						<a onClick={handleMenu} href='about'>
+						<a onClick={handleMenu} href='#about'>
 							About
 						</a>
-						<a onClick={handleMenu} href='projects'>
+						<a onClick={handleMenu} href='#projects'>
 							Projects
 						</a>
-						<a onClick={handleMenu} href='techstacks'>
+						<a onClick={handleMenu} href='#techstacks'>
 							Skills
 						</a>
-						<a onClick={handleMenu} href='contact'>
+						<a onClick={handleMenu} href='#contact'>
 							Contact
 						</a>
 					</div>
