@@ -69,11 +69,11 @@ const Navbar = () => {
 					to='home' activeClass="active" spy={true} smooth={true} offset={-200} duration={500} >Home</Link>
 					<Link 
 					to='about'
-					activeClass="active" spy={true} smooth={true} offset={-400} duration={500} >About</Link>
-					<Link spy={true} smooth={true} offset={-100} duration={500} to="techstacks">Skills</Link>
+					activeClass="active" spy={true} smooth={true} offset={-100} duration={500} >About</Link>
+					<Link spy={true} smooth={true} offset={-70} duration={500} to="techstacks">Skills</Link>
 					<Link 
 					to='projects'
-					activeClass="active"spy={true} smooth={true} offset={-100} duration={500} >Projects</Link>
+					activeClass="active"spy={true} smooth={true} offset={-70} duration={500} >Projects</Link>
 
 					<Link to='contact' spy={true} smooth={true} offset={-100} duration={500} >Contact</Link>
 				</div>
