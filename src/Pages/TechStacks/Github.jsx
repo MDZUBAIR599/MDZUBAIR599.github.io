@@ -9,6 +9,7 @@ export const Github = () => {
   return (
     <>
       <div className={"section " + newTheme}>
+      
         <h3 >
           Days I <span > Code</span>
         </h3>

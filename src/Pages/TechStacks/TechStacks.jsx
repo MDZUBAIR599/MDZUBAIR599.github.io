@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../ThemeContext/ThemeContext';
 import { Github } from './Github';
-
+import { VscGithub } from "react-icons/vsc";
+import { DiGit } from "react-icons/di";
 import styles from './TechStacks.module.css';
-import { SiChakraui } from "react-icons/si";
+import { SiChakraui, SiCypress, SiHeroku } from "react-icons/si";
 import { TbBrandVercel } from "react-icons/tb";
 import {
 	
@@ -11,6 +12,7 @@ import {
 	
 	SiJest,
   } from "react-icons/si";
+import Statistics from './Statistics';
 const TechStacks = () => {
 	const { newTheme } = useContext(ThemeContext);
 	return (
@@ -28,6 +30,7 @@ const TechStacks = () => {
 			>
 				Skills
 			</h1>
+			
 			<div className={styles.borderBottom} />
 			<h1
 				style={{ color: `${newTheme.title}` }}
@@ -144,8 +147,105 @@ const TechStacks = () => {
 					 <SiJest/>
 					<span>Jest</span>
 				</div>
+				<div
+					style={{
+						color: `${newTheme.buttonColor}`,
+						background: `${newTheme.linkHover}`,
+					}}
+					className={styles.logoWrapper}
+				>
+					  <DiGit />
+					<span>Git</span>
+				</div>
+				<div
+					style={{
+						color: `${newTheme.buttonColor}`,
+						background: `${newTheme.linkHover}`,
+					}}
+					className={styles.logoWrapper}
+				>
+					<VscGithub />
+					<span>Github</span>
+				</div>
+				<div
+					style={{
+						color: `${newTheme.buttonColor}`,
+						background: `${newTheme.linkHover}`,
+					}}
+					className={styles.logoWrapper}
+				>
+					<SiHeroku  />
+					<span>Heroku</span>
+				</div>
+				
+				<div
+					style={{
+						color: `${newTheme.buttonColor}`,
+						background: `${newTheme.linkHover}`,
+					}}
+					className={styles.logoWrapper}
+				>
+					<SiCypress   />
+					<span>Cypress</span>
+				</div>
 				
 				</div>
+				
+			  
+			   <h1
+				style={{ color: `${newTheme.title}` }}
+				className={styles.heading}
+			    >
+				Back End
+			   </h1>
+			<div className={styles.borderBottom} />
+				<div className={styles.container}>
+				
+				<div
+					style={{
+						color: `${newTheme.buttonColor}`,
+						background: `${newTheme.linkHover}`,
+					}}
+					className={styles.logoWrapper}
+				>
+					<i
+						style={{ color: '#509941' }}
+						className='devicon-nodejs-plain'
+					/>
+					<span>Node</span>
+				</div>
+				<div
+					style={{
+						color: `${newTheme.buttonColor}`,
+						background: `${newTheme.linkHover}`,
+					}}
+					className={styles.logoWrapper}
+				>
+					<i className='devicon-express-original' />
+					<span>Express</span>
+				</div>
+				<div
+					style={{
+						color: `${newTheme.buttonColor}`,
+						background: `${newTheme.linkHover}`,
+					}}
+					className={styles.logoWrapper}
+				>
+					<i className='devicon-mongodb-plain colored' />
+					<span>MongoDB</span>
+				</div>
+								
+			</div>
+			   
+			 <div>
+			 <h1
+				style={{ color: `${newTheme.title}` }}
+				className={styles.heading}
+			    >
+				
+				<Statistics/>
+			   </h1>
+			  
 				<h1
 				style={{ color: `${newTheme.title}` }}
 				className={styles.heading}
@@ -153,11 +253,10 @@ const TechStacks = () => {
 				
 				<Github/>
 			   </h1>
-			  
-			
+			 </div>
 
 		</div>
-	);
+	)
 };
 
 export default TechStacks;

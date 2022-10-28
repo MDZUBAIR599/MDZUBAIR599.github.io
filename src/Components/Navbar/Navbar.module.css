@@ -16,14 +16,14 @@
 }
 .logo img {
 	position: absolute;
-	/* top: -15px; */
+	margin-top: -8px;
 
-	width: 45px;
+	width: 65px;
 	/* height: 50px; */
 	border-radius: 40px;
 }
 .navbar {
-	width: 80%;
+	width: 83%;
 	margin: auto 10%;
 	height: fit-content;
 
@@ -104,5 +104,8 @@
 
 		height: 4px;
 		border-radius: 2px;
+	}
+	.logo{
+
 	}
 }

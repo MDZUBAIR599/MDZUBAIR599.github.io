@@ -67,12 +67,14 @@
 	margin: auto;
 	color: #8993b1;
 	line-height: 40px;
+	
 }
 .borderBottom {
 	border-bottom: 3px solid #0282bd;
 	width: 100px;
 	margin: 5px auto;
 	border-radius: 10px;
+	
 }
 .logoWrapper i {
 	margin-top: 10px;

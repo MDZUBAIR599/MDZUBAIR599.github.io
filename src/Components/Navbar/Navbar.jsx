@@ -3,7 +3,7 @@ import React, { useState, useRef, useContext } from 'react';
 import { Link } from "react-scroll";
 import styled from 'styled-components';
 import { ThemeContext } from '../../ThemeContext/ThemeContext';
-
+import resume from "../../Assests/Resume/Md-Zubair-Resume.pdf";
 import styles from './Navbar.module.css';
 
 const barStyle = {
@@ -76,6 +76,14 @@ const Navbar = () => {
 					activeClass="active"spy={true} smooth={true} offset={-70} duration={500} >Projects</Link>
 
 					<Link to='contact' spy={true} smooth={true} offset={-100} duration={500} >Contact</Link>
+					<a
+              href={resume}
+              download={"Md-Zubair-Resume"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
+            </a>
 				</div>
 				<button
 					style={{ color: `${newTheme.title}` }}

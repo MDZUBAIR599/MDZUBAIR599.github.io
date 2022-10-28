@@ -1,77 +1,86 @@
 export const projects = [
   {
+    img: "https://user-images.githubusercontent.com/101566430/193989201-ba01f5d7-88df-43d7-bc98-e07c276a23f3.png",
+    title: "Cricket.com -(clone)",
+    des: "“Cricket.com is a website where user can watch live cricket scores and fantasy team approximations. Analytics of cricket, information, and past performance of the player as well. Done in collaboration with 4 members, In under 1week.",
+    demo: "https://drive.google.com/file/d/1zY3y0E7WggCMecPXwB2NkmYSImmUWNVL/view?usp=sharing",
+    live: "https://isnt-mdzubair599-awesome.netlify.app/",
+    gitHub: "https://github.com/MDZUBAIR599/aromatic-pull-7043",
+    technologies: [
+      "React",
+      "Redux",
+      "Javascript",
+      "CSS",
+      "Chakra-Ui",
+      "HTML",
+      
+    ],
+  },
+  {
     img: "https://github.com/fahisayub/ideakart-clone/raw/main/SiteImages/2022-06-18.png",
     title: "Ideakart -(clone)",
-    des: "“Ideakart is a site that gives an idea and a platform for the book you want. This site offer a huge collection of books in diverse categories.The site has a user-friendly search engine and a quick delivery system. .Done in collaboration with 4 members, In under 1week",
+    des: "“Ideakart is a site that gives an idea and a platform for the book user want. This site offers a huge collection of books in diverse categories. The site has a user-friendly search engine and a quick delivery system. Done in collaboration with 4 members, In under 1week",
     demo: "https://drive.google.com/file/d/1zakthYtXTrITWJb6hZyV1n7tZToXiieT/view",
     live: "https://ideakart-clone-rct101.netlify.app/",
     gitHub: "https://github.com/fahisayub/ideakart-clone",
     technologies: [
       "React",
       "Redux",
-      "Chakra-Ui",
       "Javascript",
       "HTML",
+      "Chakra-Ui",
       "CSS",
+      
       
     ],
   },
   {
     img: "https://user-images.githubusercontent.com/101566430/180646781-6ebf47e4-9f49-4b8b-a283-acb7531db21d.png",
-    title: "Licious -(Clone)(Solo Project)",
-    des: "“Licious  website is to order delicious fresh chicken, meats and Seafood quickly delivered.In this project I tried to manipulate React, styling using css and chakra-ui and tried to make website more dynamic. With my efforts and the technology stack.",
+    title: "Licious -(Clone)",
+    des: "“Licious website is to order delicious fresh chicken, meats, and Seafood quickly delivered. In this project, I tried to manipulate React, styling using CSS and Chakra-Ui, and tried to make the website more dynamic. With my efforts and the technology stack. This is an individual project completed in 4 days",
     
+    demo: "https://drive.google.com/file/d/1o8DjHmsVAlCSDvQyV6hKfjNUCHPIdaxg/view",
     live: "https://csb-wq46qw.vercel.app/",
     gitHub: "https://github.com/MDZUBAIR599/licious-app-clone/tree/master/licious-clone",
     technologies: [
       "React",
       "Javascript",
-      "Chakra-Ui",
       "CSS",
-      "HTML"
+      "Chakra-Ui",
+      "HTML",
     ],
   },
-  {
-    img: "https://user-images.githubusercontent.com/101566430/190856644-34055400-42f0-46fd-a689-94527e134e20.png",
-    title: "Survey-Monkey -(clone) -Solo Project",
-    des: "“Survey-Monkey.com is a platform to easily create surveys, quizzes, and polls for any audience. Gather feedback via weblink, email, mobile chat, social media. In this project I have done this project using React, styling using css and chakra-ui and tried to make website more dynamic. With my efforts and the technology stack.",
-    
-    live: "https://eminent-rest-407-ifpe64dj7-mdzubair599.vercel.app/",
-    gitHub: "https://github.com/MDZUBAIR599/eminent-rest-407",
-    technologies: [
-      "React",
-      "Javascript",
-      "Chakra-Ui",
-      "CSS",
-      "HTML"
-    ],
-  },
+  
   {
     img: "https://user-images.githubusercontent.com/101566430/167442012-e145c179-490f-4b12-bfdc-021ebe098c7d.png",
     title:"Fitmeals.com-(clone) ",
-    des: "“Fitmeals is a Diet-food booking app given diet plan, bowl garrage is here to help you to maintain your food lifestyle without any workout and stress. Either it's bodybuilding, weight gain or weight loose. Done in collaboration with 4 members, In  4 days ",
+    des: "“Fitmeals is a Diet-food booking app given a diet plan, bowl garage is here to help you to maintain your food lifestyle without any workouts and stress. Whether it's bodybuilding, weight gain, or weight loss. Done in collaboration with 4 members, In  4 days",
     demo: "https://drive.google.com/file/d/1TfJjpGEvwGqAeRbw4F7pM6wtZcfQsRM7/view?usp=sharing",
     live: "https://hotwire.netlify.app/",
-    gitHub: "https://github.com/pallav1998/hotwire_clone",
+    gitHub: "https://github.com/Deepumandal/FIT_MEAL",
     technologies: [
       "React",
       "Redux",
       "JavaScript",
-      "Chara-Ui",
       "Json Server",
+      "HTML",
+      "Chara-Ui",
+      
+      "CSS",
+     
     ],
   },
   {
     img: "https://user-images.githubusercontent.com/61013203/161424852-7625e1c3-8c1b-4d24-82e1-05a92b49dead.png",
-    title:"Rodan + Fields -(clone)",
-    des: "“Rodan and Fields is a  skincare company which provides top-notch skincare products.This is a team project, built by us in the Construct Week,Done in collaboration with 5 members, In  4 days ",
+    title:"Rodan+Fields-(clone)",
+    des: "“Rodan and Fields is one of the top selling brands in the US. It is a skincare company which provides top-notch skincare products. It has more than 300,000 enrolled Independent Consultants and over two million Preferred Customers, Done in collaboration with 5 members, In  4 days ",
     demo: "https://drive.google.com/file/d/1u3kHjB4wlGyG0yIAadCJuxOY5Rwg0CKv/view?usp=sharing",
     live: "https://cool-khapse-fa2715.netlify.app/",
     gitHub: "https://github.com/pallu2108/Rodan-Field-Clone-2",
     technologies: [
       "javascript",
-      "HTML",
       "CSS",
+      "HTML",
       
     ],
   },

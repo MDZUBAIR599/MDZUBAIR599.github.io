@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './Components/Navbar/Navbar';
-
+import resume from "../src/Assests/Resume/Md-Zubair-Resume.pdf"
 import Home from './Pages/Home/Homepage';
 import { ThemeContext } from './ThemeContext/ThemeContext';
 
@@ -62,6 +62,14 @@ function App() {
 						<a onClick={handleMenu} href='#contact'>
 							Contact
 						</a>
+						<a
+              href={resume}
+              download
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
+            </a>
 					</div>
 					<Navbar />
 					<Home scrollRef={scrollRef} />

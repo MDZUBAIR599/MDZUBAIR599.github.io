@@ -33,15 +33,6 @@ const About = () => {
         <p style={{ color: `${newTheme.para}` }} className={styles.aboutMe}>
           I am a Full stack web developer. I have made some projects using HTML,
           CSS, Javascript, React, Redux still learning...
-    
-          <br />
-          <br />
-
-          i Have done 1200 hours + coding.
-          <br />
-          <br />
-          Solved 200+ DSA (data structures and algorithms)
-
           <br />
           <br />I am passionate about solving real-world problems in the field
           of web development and software engineering. Eager to be a part of a
