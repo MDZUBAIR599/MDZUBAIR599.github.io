@@ -1,5 +1,25 @@
 export const projects = [
   {
+    img: "https://user-images.githubusercontent.com/101566430/204126973-0122d638-b8b8-4896-a83f-f0351c4aadd0.png",
+    title: "Wellness-Pharma -(clone)",
+    des: "“This is the clone of Tata 1mg.com, It is An e-commerce web application that widely provides e-pharmacy, diagnostics, inhealthcare solutions. A collaborative project built by a team of 4, executed in 4 days",
+    demo: "https://drive.google.com/file/d/1SDccpremP3o8RQeblIpdBAMph-DHa7FL/view",
+    live: "https://the-awesome-mdzubair599-site.netlify.app/",
+    gitHub: "https://github.com/abdullahhassan19 rambunctious-attraction-3750",
+    technologies: [
+      "MongoDB",
+      "Express",
+      "NodeJS",
+      "React",
+      "Redux",
+      "Javascript",
+      "CSS",
+      "Chakra-Ui",
+      "HTML",
+      
+    ],
+  },
+  {
     img: "https://user-images.githubusercontent.com/101566430/193989201-ba01f5d7-88df-43d7-bc98-e07c276a23f3.png",
     title: "Cricket.com -(clone)",
     des: "“Cricket.com is a website where user can watch live cricket scores and fantasy team approximations. Analytics of cricket, information, and past performance of the player as well. Done in collaboration with 4 members, In under 1week.",
@@ -34,23 +54,6 @@ export const projects = [
       
     ],
   },
-  {
-    img: "https://user-images.githubusercontent.com/101566430/180646781-6ebf47e4-9f49-4b8b-a283-acb7531db21d.png",
-    title: "Licious -(Clone)",
-    des: "“Licious website is to order delicious fresh chicken, meats, and Seafood quickly delivered. In this project, I tried to manipulate React, styling using CSS and Chakra-Ui, and tried to make the website more dynamic. With my efforts and the technology stack. This is an individual project completed in 4 days",
-    
-    demo: "https://drive.google.com/file/d/1o8DjHmsVAlCSDvQyV6hKfjNUCHPIdaxg/view",
-    live: "https://csb-wq46qw.vercel.app/",
-    gitHub: "https://github.com/MDZUBAIR599/licious-app-clone/tree/master/licious-clone",
-    technologies: [
-      "React",
-      "Javascript",
-      "CSS",
-      "Chakra-Ui",
-      "HTML",
-    ],
-  },
-  
   {
     img: "https://user-images.githubusercontent.com/101566430/167442012-e145c179-490f-4b12-bfdc-021ebe098c7d.png",
     title:"Fitmeals.com-(clone) ",
