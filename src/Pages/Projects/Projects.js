@@ -2,7 +2,7 @@ export const projects = [
   {
     img: "https://user-images.githubusercontent.com/101566430/204126973-0122d638-b8b8-4896-a83f-f0351c4aadd0.png",
     title: "Wellness-Pharma -(clone)",
-    des: "“This is the clone of Tata 1mg.com, It is An e-commerce web application that widely provides e-pharmacy, diagnostics, inhealthcare solutions. A collaborative project built by a team of 4, executed in 4 days",
+    des: "“An e-commerce web application that widely provides e-pharmacy, diagnostics, inhealthcare solutions. A collaborative project built by a team of 4, executed in 4 days",
     demo: "https://drive.google.com/file/d/1SDccpremP3o8RQeblIpdBAMph-DHa7FL/view",
     live: "https://the-awesome-mdzubair599-site.netlify.app/",
     gitHub: "https://github.com/abdullahhassan19 rambunctious-attraction-3750",
