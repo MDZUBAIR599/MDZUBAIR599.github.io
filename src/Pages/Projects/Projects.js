@@ -1,11 +1,31 @@
 export const projects = [
   {
+    img: "https://github.com/maheshguptha49/HighDash_Hackathon/assets/101566430/8cb7a91f-0f87-4d73-98f3-a6d430664735",
+    title: "Budanta.com",
+    des: "“Budanta is the 1st company in India to introduce high-speed internet without FUP on FTTH enabling a new set of features such as meshed protection on the optical layer. (Mobile application launched in Playstore and web app still building) This is a collaborative project built by a team of 4",
+    demo: "",
+    live: "https://budanta-website.vercel.app/",
+    gitHub: "https://isnt-mdzubair599",
+    technologies: [
+      "React",
+      "Redux",
+      "MongoDB",
+      "Express",
+      "NodeJS",
+      "ionic Framework",
+      "Javascript",
+      "SCSS",
+      "Meterial-Ui",
+      
+    ],
+  },
+  {
     img: "https://user-images.githubusercontent.com/101566430/204126973-0122d638-b8b8-4896-a83f-f0351c4aadd0.png",
     title: "Wellness-Pharma -(clone)",
     des: "“An e-commerce web application that widely provides e-pharmacy, diagnostics, inhealthcare solutions. A collaborative project built by a team of 4, executed in 4 days",
     demo: "https://drive.google.com/file/d/1SDccpremP3o8RQeblIpdBAMph-DHa7FL/view",
-    live: "https://the-awesome-mdzubair599-site.netlify.app/",
-    gitHub: "https://github.com/abdullahhassan19 rambunctious-attraction-3750",
+    live: "https://welness-pharma.vercel.app/",
+    gitHub: "https://github.com/abdullahhassan19/rambunctious-attraction-3750",
     technologies: [
       "MongoDB",
       "Express",

@@ -137,16 +137,7 @@ const TechStacks = () => {
 					<TbBrandVercel />
 					<span>Vercel</span>
 				</div>
-				<div
-					style={{
-						color: `${newTheme.buttonColor}`,
-						background: `${newTheme.linkHover}`,
-					}}
-					className={styles.logoWrapper}
-				>
-					 <SiJest/>
-					<span>Jest</span>
-				</div>
+				
 				<div
 					style={{
 						color: `${newTheme.buttonColor}`,
@@ -178,16 +169,7 @@ const TechStacks = () => {
 					<span>Heroku</span>
 				</div>
 				
-				<div
-					style={{
-						color: `${newTheme.buttonColor}`,
-						background: `${newTheme.linkHover}`,
-					}}
-					className={styles.logoWrapper}
-				>
-					<SiCypress   />
-					<span>Cypress</span>
-				</div>
+				
 				
 				</div>
 				
