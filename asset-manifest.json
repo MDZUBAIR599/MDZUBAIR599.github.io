@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.a102d7bb.css",
-    "main.js": "/static/js/main.27ff5ab6.js",
+    "main.js": "/static/js/main.bebf0be4.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/mypic.png": "/static/media/mypic.faa191537b445cc98fc4.png",
-    "static/media/Md-Zubair-Resume.pdf": "/static/media/Md-Zubair-Resume.30d0a7856b5bfc54132d.pdf",
+    "static/media/Md-Zubair-Resume.pdf": "/static/media/Md-Zubair-Resume.14257d3f2f9a525ec2e1.pdf",
     "index.html": "/index.html",
     "main.a102d7bb.css.map": "/static/css/main.a102d7bb.css.map",
-    "main.27ff5ab6.js.map": "/static/js/main.27ff5ab6.js.map",
+    "main.bebf0be4.js.map": "/static/js/main.bebf0be4.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a102d7bb.css",
-    "static/js/main.27ff5ab6.js"
+    "static/js/main.bebf0be4.js"
   ]
 }
