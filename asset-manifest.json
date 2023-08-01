@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.a102d7bb.css",
-    "main.js": "/static/js/main.cd507064.js",
+    "main.js": "/static/js/main.d57499db.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/mypic.png": "/static/media/mypic.faa191537b445cc98fc4.png",
     "static/media/Md-Zubair-Resume.pdf": "/static/media/Md-Zubair-Resume.f2bb806ded7da6a203b1.pdf",
     "index.html": "/index.html",
     "main.a102d7bb.css.map": "/static/css/main.a102d7bb.css.map",
-    "main.cd507064.js.map": "/static/js/main.cd507064.js.map",
+    "main.d57499db.js.map": "/static/js/main.d57499db.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a102d7bb.css",
-    "static/js/main.cd507064.js"
+    "static/js/main.d57499db.js"
   ]
 }
